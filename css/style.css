@@ -1,0 +1,129 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    width: 200px;
+    height: max-content;
+    background-color: rgb(247, 207, 209);
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+    margin: 15px;
+}
+
+.product img {
+    height: 120px;
+    width: 120px;
+}
+
+.product p {
+    padding: 0;
+    margin: 0;
+}
+
+#sample {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center {
+    /*align-items: center;*/
+    justify-content: space-around;
+}
+
+.shadow-text {
+    font-size: 2rem;
+    padding: 2rem;
+    color: #333;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    /* Horizontal offset, Vertical offset, Blur, Color */
+}
+
+.stars {
+    color: rgb(247, 128, 0);
+    /* Color of the stars */
+    font-size: 1em;
+    /* Size of the stars */
+}
+
+.pricestyle {
+    font-size: 30px;
+}
+.product:hover,.product img:hover,.btn:hover{
+    transition: transform 0.5s ease box-shadow 0.5s ease;
+    transform: scale(1.08);
+
+    
+}
+.discprop{
+    background-color: brown;
+    color: white;
+}
+a{
+    color: #0056B3;
+}
+.cartvalue{
+    position: absolute;
+    top: 0;
+    left: 100;
+    transform: translate(-50%, -50%);
+    color: #0056B3;
+    background-color: #4d9aec;
+    font-size: 25px;
+} 
+.toplist{
+    position: sticky;
+    top: 0px;
+    background-color: #FBE2DE;
+    z-index: 99;
+}
+.carthead{
+    position: sticky;
+    top: 0;
+    background-color: #FCE3DF;
+    z-index: 2;
+}
+.cart-icon{
+    font-size: 3rem;
+}
+#cartdisplay{
+ 
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 80vh; /* Full height of the viewport */
+        text-align: center; /* Center text inside the div */
+        font-size: 1.5rem; /* Adjust font size if needed */
+        flex-direction: column; /* Ensure each text line is on a new line */
+    
+    
+}
+@media(max-width:576px){
+    h1{
+        font-size: 25px;
+    }
+    .shadow-text{
+        padding: 0.5rem;
+    }
+    .cart-icon{
+        font-size: 1.3rem;
+    }
+    .cartvalue{
+        font-size: 10px;
+    }
+    .resetcart{
+        font-size: 10px;
+    }
+    .submitbutton{
+        padding: 0;
+    }
+}
