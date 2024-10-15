@@ -40,7 +40,7 @@
                     <span id="cart" class="cartvalue badge  border border-light rounded-circle"></span>
                 </i>
             </a>
-            <button class="btn btn-danger btn-sm rounded-pill resetcart" onclick="resetCartCount()">Reset Cart</button>
+            <button class="btn btn-danger btn-sm rounded-pill resetcart" onclick="ResetCartCount()">Reset Cart</button>
         </div>
     </div>
     
@@ -62,7 +62,7 @@
                 abc.innerHTML = "<p>Failed to load products.</p>";
             }
             }
-        function resetcartcount(){localStorage.cartcount=0;
+        function ResetCartCount(){localStorage.cartcount=0;
             let cartprod=[];
             localStorage.setItem("cartproducts",JSON.stringify(cartprod));
             document.getElementById('cart').innerHTML = localStorage.cartcount;
