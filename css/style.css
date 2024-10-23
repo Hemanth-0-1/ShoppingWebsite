@@ -10,7 +10,7 @@ body {
 
 .product {
     width: 200px;
-    height: max-content;
+/*     height: max-content; */
     background-color: rgb(247, 207, 209);
     border: 1px solid black;
     border-radius: 15px;
